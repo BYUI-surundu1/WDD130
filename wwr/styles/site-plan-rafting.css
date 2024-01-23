@@ -7,7 +7,29 @@
     --heading-font:'https://fonts.google.com/specimen/Julius+Sans+One?query=sans '
     --paragraph-font:'https://fonts.google.com/specimen/Public+Sans?query=sans'
 
-    -nav-background-color: blue;
+}
 
+nav{ 
+    background-color: blue;
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a{
+    display: block;
+    color: var(--accent2-color);
+    text-decoration: none;
+    padding: 1rem;
 
 }
+
+nav a:link, nav a:focus-visited{
+    color: var(--nav-link-color);
+
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
