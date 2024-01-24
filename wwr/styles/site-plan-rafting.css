@@ -1,21 +1,30 @@
-:root{
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    padding: 20px;
+}
+
+:root {
    --primary-color: rgb(72, 0, 255);
    --secondary-color: #5A7684;
    --accent1-color: #C5D1EB;
    --accent2-color: #395B50;
 
-    --heading-font:'https://fonts.google.com/specimen/Julius+Sans+One?query=sans '
+    --heading-font:'https://fonts.google.com/specimen/Julius+Sans+One?query=sans'
     --paragraph-font:'https://fonts.google.com/specimen/Public+Sans?query=sans'
 
 }
 
-nav{ 
+nav { 
     background-color: blue;
     font-size: 1.2rem;
     display: flex;
 }
 
-nav a{
+nav a {
     display: block;
     color: var(--accent2-color);
     text-decoration: none;
@@ -23,7 +32,7 @@ nav a{
 
 }
 
-nav a:link, nav a:focus-visited{
+nav a:link, nav a:visited {
     color: var(--nav-link-color);
 
 }
