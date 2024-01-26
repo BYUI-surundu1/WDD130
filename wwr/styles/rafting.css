@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Roboto&display=swap');
+
+:root {
+    --primary-color: rgb(72, 0, 255);
+    --secondary-color: #5A7684;
+    --accent1-color: #C5D1EB;
+    --accent2-color: #395B50;
+ 
+     --heading-font:'https://fonts.google.com/specimen/Julius+Sans+One?query=sans'
+     --paragraph-font:'https://fonts.google.com/specimen/Public+Sans?query=sans'
+}
+body {
+    font-family: Julius Sans One, sans-serif;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, p {
+    color: var(--primary-color);
+}
+
+nav.sociallinks img {
+    text-decoration: none;
+    border: none;
+}
+
+.hero {
+    position: relative;
+    text-align: centre;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(red, green, blue, alpha);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 600px;
+}
+
+.hero article img {
+    float: right;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+nav.sociallinks {
+    margin-top: 10px;
+}
+
+nav.sociallinks a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav.sociallinks img {
+    width: 30px;
+    height: auto;
+}
+
