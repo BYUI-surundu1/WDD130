@@ -63,27 +63,27 @@ nav.sociallinks img {
 }
 
 footer {
-    background-color: var(--secondary-color);
-    color: #fff;
+    background-color: var(--secondary-color);  
+    color: #fff; 
     text-align: center;
-    padding: 20px;
+    padding: 10px; 
+    margin-top: 20px;  
 }
 
 footer p {
     margin: 0;
+    font-size: 14px; 
 }
 
 nav.sociallinks {
-    margin-top: 5px;
+    margin-top: 5px; 
 }
 
 nav.sociallinks a {
-    margin: 0 10px;
-    text-decoration: none;
+    margin: 0 8px;
 }
 
 nav.sociallinks img {
-    width: 30px;
+    width: 25px;
     height: auto;
 }
-
