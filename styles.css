@@ -1,15 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Roboto&display=swap');
+
+:root {
+    --primary-color: rgb(0, 166, 255);
+    --secondary-color: #5A7684;
+    --accent1-color: #C5D1EB;
+    --accent2-color: #395B50;
+ 
+     --heading-font:'https://fonts.google.com/specimen/Julius+Sans+One?query=sans'
+     --paragraph-font:'https://fonts.google.com/specimen/Public+Sans?query=sans'
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+header, footer, .grid {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+header, footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+    max-width: 840px;
+    margin: 0 auto;
+}        
+.grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+}
 main {
     max-width: 840px;
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2); /* 1 */
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border: 1px solid rgba(0, 0, 0, 0.2); 
     padding: 1 rem;
     background-color: #eee;
     color: #333;
     text-align: center;
+    
 }
 
 aside img {
@@ -19,7 +58,7 @@ aside img {
 }
 
 aside h2 {
-    position: absolute;
+    position:absolute;
     top: 47px;
     left: 150px;
 }
@@ -31,21 +70,22 @@ main img {
 
 p { padding: 0;}
 
-footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
-}
+
 
 nav {
     background-color: steelblue;
-    padding: 10px;
+    padding: 1px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 h1 {
@@ -65,6 +105,8 @@ img {
     padding: 0;
     box-sizing: border-box;
 }
+
+
 
 /* Class Selectors */
 .box {
