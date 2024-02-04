@@ -1,14 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Roboto&display=swap');
-
-:root {
-    --primary-color: rgb(0, 166, 255);
-    --secondary-color: #5A7684;
-    --accent1-color: #C5D1EB;
-    --accent2-color: #395B50;
- 
-     --heading-font:'https://fonts.google.com/specimen/Julius+Sans+One?query=sans'
-     --paragraph-font:'https://fonts.google.com/specimen/Public+Sans?query=sans'
-}
 body {
     font-family: Julius Sans One, sans-serif;
     color: var(--text-color);
@@ -16,9 +5,40 @@ body {
     padding: 0;
 }
 
+header {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 10px;
+  }
+
+  header img {
+    max-width: 100px; 
+  }
 h1, h2, p {
     color: var(--primary-color);
 }
+
+nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+  }
 
 nav.sociallinks img {
     text-decoration: none;
@@ -62,13 +82,34 @@ nav.sociallinks img {
     border-radius: 5px;
 }
 
+#adventures {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  #adventures figure {
+    margin: 10px;
+    text-align: center;
+  }
+
 footer {
-    background-color: var(--secondary-color);  
+    background-color: #34495e;  
     color: #fff; 
     text-align: center;
     padding: 10px; 
     margin-top: 20px;  
 }
+
+.footer-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  footer img {
+    max-width: 30px; 
+    margin-left: 10px;
+  }
 
 footer p {
     margin: 0;
