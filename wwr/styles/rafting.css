@@ -86,6 +86,7 @@ nav.sociallinks img {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    text-align: center;
   }
   
   #adventures figure {
