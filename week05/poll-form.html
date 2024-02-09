@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | HTML FORM - User Poll</title>
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | Francis Surundu | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>Full Name: <input type="text" name="fullname"></label>
+                <label>Email: <input type="email" name="usermail"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <label for="browser">What is your favorite internet browser?</label>
+                <select id="browser" name="browser">
+                    <option value="chrome"></option>
+                    <option value="firefox"></option>
+                    <option value="safari"></option>
+                    <option value="edge"></option>
+                    <option value="brave"></option>
+                    <option value="other"></option>
+                </select>
+                <label for="pet">Do you have a household pet?</label>
+                <input type="checkbox" id="pet" name="pet">
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Jinja, Nile waters, source of the Nile River"></textarea>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+        <footer>
+            <p>&copy;2024 | HTML Form - user Poll Activity | Francis Surundu</p>
+        </footer>
+    </main>
+</body>
+</html>
