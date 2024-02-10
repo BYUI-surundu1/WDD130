@@ -13,22 +13,36 @@
         <form>
             <fieldset>
                 <legend>Contact Information</legend>
-                <label>Full Name: <input type="text" name="fullname"></label>
-                <label>Email: <input type="email" name="usermail"></label>
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="form-item column2">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail">
+                </div>
             </fieldset>
+
             <fieldset>
-                <legend>Questions</legend>
-                <label for="browser">What is your favorite internet browser?</label>
-                <select id="browser" name="browser">
-                    <option value="chrome"></option>
-                    <option value="firefox"></option>
-                    <option value="safari"></option>
-                    <option value="edge"></option>
-                    <option value="brave"></option>
-                    <option value="other"></option>
-                </select>
-                <label for="pet">Do you have a household pet?</label>
-                <input type="checkbox" id="pet" name="pet">
+                <legend>Browser Preferences</legend>
+                <div class="form-item column1">
+                    <label for="browser">What is your favorite internet browser?</label>
+                    <select id="browser" name="browser">
+                        <option value="chrome"></option>
+                        <option value="firefox"></option>
+                        <option value="safari"></option>
+                        <option value="edge"></option>
+                        <option value="brave"></option>
+                        <option value="other"></option> 
+                    </select>
+                </div>
+            <fieldset>
+                <legend>Pet Preferences</legend>
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+            </fieldset>   
                 <textarea id="feedback" name="feedback" rows="4" placeholder="Jinja, Nile waters, source of the Nile River"></textarea>
             </fieldset>
             <button type="submit">Submit Poll</button>
